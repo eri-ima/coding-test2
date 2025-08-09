@@ -28,6 +28,8 @@ select::-ms-expand {
 }
 
 .container {
+  display: flex;
+  flex-wrap: wrap;
   min-width: 850px;
   padding: 50px 35px;
   -webkit-box-sizing: border-box;
@@ -35,6 +37,7 @@ select::-ms-expand {
 }
 
 .searchResults {
+  width: 100%;
   color: #2299e1;
   text-align: center;
   margin: 0 auto 25px;
@@ -47,6 +50,10 @@ select::-ms-expand {
 .searchResults__keyword {
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+form {
+  flex: 1;
 }
 
 .refinement {
@@ -283,10 +290,14 @@ select::-ms-expand {
 }
 
 .contentsList {
-  border-top: 1px solid #f0f0f0;
+  width: 25%;
+  border-left: 1px solid #f0f0f0;
+  padding-left: 30px;
+  margin-left: 30px;
 }
 
 .contentsList h2 {
+  display: none;
   color: #2299e1;
   font-weight: normal;
   text-align: center;
@@ -298,6 +309,7 @@ select::-ms-expand {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
+  flex-flow: column;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -309,6 +321,7 @@ select::-ms-expand {
   flex-basis: 48%;
   max-width: 48%;
   margin: 0 0 60px;
+  margin: 0 0 30px;
 }
 
 .contentsList li a {
@@ -368,4 +381,4 @@ select::-ms-expand {
   right: 16px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-}
+}}}}  transform: rotate(45deg);  transform: rotate(45deg);}/*# sourceMappingURL=style.css.map */

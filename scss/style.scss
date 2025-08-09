@@ -39,6 +39,8 @@ select::-ms-expand {
 
 // contents
 .container {
+  display: flex;
+  flex-wrap: wrap;
   min-width: 850px;
   padding: 50px 35px;
   box-sizing: border-box;
@@ -46,6 +48,7 @@ select::-ms-expand {
 
 // searchResults
 .searchResults {
+  width: 100%;
   color: $zoffBlue;
   text-align: center;
   margin: 0 auto 25px;
@@ -59,6 +62,9 @@ select::-ms-expand {
 }
 
 // refinement
+form {
+  flex: 1;
+}
 .refinement {
   width: 480px;
   margin: 0 auto;
@@ -267,8 +273,12 @@ select::-ms-expand {
 
 // contentsList
 .contentsList {
-  border-top: 1px solid $lightGray;
+  width: 25%;
+  border-left: 1px solid $lightGray;
+  padding-left: 30px;
+  margin-left: 30px;
   h2 {
+    display: none;
     color: $zoffBlue;
     font-weight: normal;
     text-align: center;
@@ -276,13 +286,12 @@ select::-ms-expand {
   }
   ul {
     display: flex;
+    flex-flow: column;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   li {
-    flex-basis: 48%;
-    max-width: 48%;
-    margin: 0 0 60px;
+    margin: 0 0 30px;
     a {
       color: #000;
       display: flex;
